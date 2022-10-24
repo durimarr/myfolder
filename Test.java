@@ -86,7 +86,7 @@ public class Test {
 					  i0 = NumRim.valueOf(arr[0]).getNumArab();
 					  i2 = NumRim.valueOf(arr[2]).getNumArab();
 					  res = i0 - i2;
-					  if(res < 0)
+					  if(res < 1)
 						  throw new InputException("there was no zero in the Roman numeral system");
 					  for(NumRim nr : NumRim.values()) 
 						if(nr.getNumArab() == res)
@@ -102,6 +102,8 @@ public class Test {
 					  i0 = NumRim.valueOf(arr[0]).getNumArab();
 					  i2 = NumRim.valueOf(arr[2]).getNumArab();
 					  res = i0 / i2;
+					  if(res < 1)
+						  throw new InputException("there was no zero in the Roman numeral system");
 					  for(NumRim nr : NumRim.values()) 
 						if(nr.getNumArab() == res)
 					  	result = nr.name();
