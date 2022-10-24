@@ -72,6 +72,7 @@ public class Test {
 					  i0 = NumRim.valueOf(arr[0]).getNumArab();
 					  i2 = NumRim.valueOf(arr[2]).getNumArab();
 					  res = i0 + i2;
+					  //if(res > 10) result = String.valueOf(res);
 					  for(NumRim nr : NumRim.values()) 
 						if(nr.getNumArab() == res)
 					  	result = nr.name();
@@ -118,6 +119,7 @@ public class Test {
 					  i0 = NumRim.valueOf(arr[0]).getNumArab();
 					  i2 = NumRim.valueOf(arr[2]).getNumArab();
 					  res = i0 * i2;
+					//if(res > 10) result = String.valueOf(res);
 					  for(NumRim nr : NumRim.values()) 
 						if(nr.getNumArab() == res)
 					  	result = nr.name();
